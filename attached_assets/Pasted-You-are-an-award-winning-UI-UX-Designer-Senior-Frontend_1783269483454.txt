@@ -1,0 +1,669 @@
+You are an award-winning UI/UX Designer, Senior Frontend Engineer, Brand Designer, and Creative Director.
+
+Your task is to design and develop a PREMIUM restaurant website for
+
+VANAS
+Authentic Coastal Cuisine
+
+The website should feel like a premium luxury restaurant website, not a normal local restaurant website.
+
+Think Apple + Michelin Restaurant + Modern Luxury UI.
+
+The website must be fully responsive, extremely smooth, SEO friendly and visually stunning.
+
+------------------------------------------------------
+IMPORTANT
+------------------------------------------------------
+
+I have uploaded:
+
+• Official Logo
+• Restaurant Exterior Images
+• Food Images
+• Restaurant Menu Images
+
+USE ONLY THE UPLOADED IMAGES.
+
+Do not use stock images.
+
+Use the uploaded logo throughout the website.
+
+------------------------------------------------------
+TECH STACK
+------------------------------------------------------
+
+React
+Vite
+TypeScript
+Tailwind CSS
+Framer Motion
+GSAP
+Swiper
+React Icons
+React Router
+Lenis Smooth Scroll
+
+------------------------------------------------------
+DESIGN STYLE
+------------------------------------------------------
+
+Luxury
+Premium
+Modern
+Traditional Coastal
+Minimal
+Elegant
+Warm
+Food Focused
+
+------------------------------------------------------
+COLORS
+------------------------------------------------------
+
+Primary Green
+#567D3E
+
+Dark Green
+#355E3B
+
+Cream
+#F7F4EB
+
+Wood Beige
+#E8DCC8
+
+Dark Brown
+#2D1B12
+
+Gold
+#D4AF37
+
+White
+#FFFFFF
+
+------------------------------------------------------
+FONTS
+------------------------------------------------------
+
+Heading
+Cormorant Garamond
+
+Body
+Poppins
+
+Menu Price
+Playfair Display
+
+------------------------------------------------------
+WEBSITE SECTIONS
+------------------------------------------------------
+
+Loading Screen
+
+Animated Logo
+
+Leaf Animation
+
+Preparing Fresh Coastal Experience...
+
+------------------------------------------------------
+
+Sticky Navbar
+
+Logo
+
+Home
+
+About
+
+Menu
+
+Gallery
+
+Reviews
+
+Contact
+
+Reserve Table Button
+
+Glassmorphism Navbar
+
+------------------------------------------------------
+
+Hero Section
+
+Use uploaded restaurant image.
+
+Dark cinematic overlay.
+
+Large Heading
+
+AUTHENTIC MANGALOREAN COASTAL CUISINE
+
+Subtitle
+
+Fresh Seafood
+Traditional Recipes
+Authentic Flavours
+
+Buttons
+
+View Menu
+
+Reserve Table
+
+Parallax Animation
+
+Floating Leaves
+
+Floating Spices
+
+Slow Zoom Background
+
+------------------------------------------------------
+
+Statistics
+
+1900+
+
+Happy Customers
+
+4.2★
+
+Google Rating
+
+50+
+
+Signature Dishes
+
+100%
+
+Fresh Seafood
+
+------------------------------------------------------
+
+About Us
+
+Introduce VANAS.
+
+Mention:
+
+Authentic Coastal Cuisine
+
+Fresh Seafood
+
+Traditional Mangalorean Recipes
+
+Family Friendly
+
+Affordable Pricing
+
+Warm Hospitality
+
+Large Seating
+
+Beautiful restaurant image.
+
+------------------------------------------------------
+
+Why Choose Us
+
+Fresh Daily Seafood
+
+Traditional Recipes
+
+Fast Service
+
+Family Dining
+
+Affordable Pricing
+
+Large Parking
+
+Takeaway
+
+Delivery
+
+Wheelchair Accessible
+
+------------------------------------------------------
+
+Signature Dishes
+
+Large Premium Cards
+
+Use uploaded images.
+
+Include
+
+Chicken Ghee Roast
+
+Prawns Ghee Roast
+
+Fish Thali
+
+Chicken Biryani
+
+Squid Fry
+
+Chicken Sukka
+
+Neer Dosa
+
+Fish Tawa Fry
+
+Anjal Fry
+
+Kori Roti
+
+Hover Animation
+
+------------------------------------------------------
+
+FULL MENU
+
+Create modern category tabs.
+
+Each menu item must display
+
+Image (if available)
+
+Dish Name
+
+Description
+
+Price
+
+Veg/Non-Veg Badge
+
+Chef Special Badge (where applicable)
+
+========================================================
+MENU
+========================================================
+
+THALI
+
+Fish Thali — ₹70
+
+Veg Thali — ₹70
+
+Vanas Special Thali — ₹149
+
+Kori Roti (4 Pieces) — ₹207
+
+--------------------------------------------------------
+
+VEG STARTERS
+
+Paneer Urval — ₹322
+
+Paneer Chilli — ₹299
+
+Paneer Manchurian — ₹276
+
+Paneer Pepper Chilli — ₹299
+
+Paneer Pepper Fry — ₹299
+
+Paneer 65 — ₹322
+
+Paneer Andhra Chilli — ₹322
+
+Mushroom Urval — ₹322
+
+Mushroom Chilli — ₹276
+
+Mushroom Manchurian — ₹276
+
+Mushroom Pepper Chilli — ₹299
+
+Mushroom Pepper Fry — ₹299
+
+Mushroom 65 — ₹322
+
+Gobi Chilli — ₹207
+
+Gobi Manchurian — ₹207
+
+--------------------------------------------------------
+
+NON VEG STARTERS
+
+Egg Chilli — ₹207
+
+Egg Pepper — ₹207
+
+Chicken Kabab — ₹207
+
+Chicken Sukka — ₹138
+
+Chicken 65 — ₹380
+
+Chicken Chilli — ₹334
+
+Chicken Manchurian — ₹334
+
+Chicken Pepper Fry — ₹380
+
+Chicken Pepper Chilli — ₹380
+
+Chicken Lollipop — ₹276
+
+Chicken Urval — ₹403
+
+Lemon Chicken — ₹380
+
+Andhra Chilli Chicken — ₹391
+
+--------------------------------------------------------
+
+SEAFOOD
+
+Anjal Masala Fry — ₹518
+
+Bangude Masala Fry — ₹207
+
+Koddai Masala Fry — ₹288
+
+Muru Masala Fry — ₹322
+
+Nang Masala Fry — ₹403
+
+Neimeen Masala Fry — ₹748
+
+Anjal Tawa — ₹529
+
+Anjal Rava — ₹529
+
+Bangude Tawa — ₹207
+
+Bangude Rava — ₹207
+
+Silver Fish Rava — ₹207
+
+Squid Tawa — ₹345
+
+Squid Rava — ₹345
+
+Prawns Tawa — ₹345
+
+Prawns Rava — ₹345
+
+Fish Egg Tawa — ₹322
+
+Kaane Tawa — ₹414
+
+Kaane Rava — ₹414
+
+--------------------------------------------------------
+
+MAIN COURSE
+
+Egg Curry — ₹127
+
+Chicken Curry — ₹207
+
+Anjal Curry — ₹518
+
+Bangude Curry — ₹219
+
+Silver Fish Curry — ₹230
+
+Prawns Curry — ₹414
+
+--------------------------------------------------------
+
+GHEE ROAST
+
+Chicken Ghee Roast — ₹391
+
+Chicken Green Ghee Roast — ₹403
+
+Egg Ghee Roast — ₹253
+
+Paneer Ghee Roast — ₹265
+
+Paneer Green Ghee Roast — ₹288
+
+Mushroom Ghee Roast — ₹265
+
+Mushroom Green Ghee Roast — ₹288
+
+Prawns Ghee Roast — ₹437
+
+Prawns Green Ghee Roast — ₹437
+
+Squid Ghee Roast — ₹345
+
+Squid Green Ghee Roast — ₹345
+
+Crab Ghee Roast — ₹518
+
+Crab Green Ghee Roast — ₹518
+
+--------------------------------------------------------
+
+RICE & BIRYANI
+
+Boiled Rice — ₹81
+
+White Rice — ₹81
+
+Ghee Rice — ₹104
+
+Chicken Biryani — ₹161
+
+Egg Biryani — ₹207
+
+Veg Biryani — ₹207
+
+Paneer Biryani — ₹288
+
+Mushroom Biryani — ₹288
+
+Chicken Ghee Roast Biryani — ₹403
+
+Prawns Biryani — ₹460
+
+Prawns Ghee Roast Biryani — ₹518
+
+Anjal Fish Biryani — ₹633
+
+--------------------------------------------------------
+
+FRIED RICE
+
+Veg Fried Rice — ₹173
+
+Chicken Fried Rice — ₹230
+
+Paneer Manchurian Fried Rice — ₹230
+
+Chicken Manchurian Fried Rice — ₹288
+
+--------------------------------------------------------
+
+NOODLES
+
+Veg Noodles — ₹219
+
+Chicken Noodles — ₹253
+
+Paneer Manchurian Noodles — ₹299
+
+Chicken Manchurian Noodles — ₹299
+
+--------------------------------------------------------
+
+BUCKET BIRYANI
+
+Veg Bucket Biryani — ₹1,150
+
+Chicken Dum Bucket Biryani — ₹1,725
+
+Mutton Dum Bucket Biryani — ₹2,530
+
+Chicken Ghee Roast Bucket Biryani — ₹2,760
+
+========================================================
+
+Gallery
+
+Use uploaded food images.
+
+Masonry Grid
+
+Hover Zoom
+
+Lightbox
+
+--------------------------------------------------------
+
+Customer Reviews
+
+Show Google Rating
+
+★★★★☆
+
+4.2/5
+
+Display customer testimonials inspired by the provided Google reviews.
+
+Highlight:
+
+Amazing Ghee Roast
+
+Fresh Seafood
+
+Affordable Pricing
+
+Fast Service
+
+Authentic Taste
+
+Family Friendly
+
+--------------------------------------------------------
+
+Reservation Section
+
+Fields
+
+Name
+
+Phone
+
+Guests
+
+Date
+
+Time
+
+Message
+
+--------------------------------------------------------
+
+Contact
+
+Address
+
+Kadri Temple Road
+
+Next to Tejaswini Hospital
+
+Kadri
+
+Mangaluru
+
+Phone
+
++91 96867 60009
+
++91 90354 95854
+
+Google Map
+
+Opening Hours
+
+12:00 PM – 3:45 PM
+
+7:00 PM – 10:45 PM
+
+Buttons
+
+Call Now
+
+Get Directions
+
+Instagram
+
+Swiggy Order
+
+--------------------------------------------------------
+
+Footer
+
+Logo
+
+Quick Links
+
+Opening Hours
+
+Address
+
+Phone
+
+Instagram
+
+Copyright
+
+--------------------------------------------------------
+
+Animations
+
+Everything should animate beautifully.
+
+Smooth scrolling.
+
+Luxury hover effects.
+
+Glassmorphism.
+
+Parallax.
+
+Food image zoom.
+
+Floating leaves.
+
+Fade in.
+
+Slide in.
+
+Micro interactions.
+
+Apple-quality animations.
+
+--------------------------------------------------------
+
+Performance
+
+Responsive on Mobile
+
+Responsive on Tablet
+
+Responsive on Desktop
+
+SEO Optimized
+
+Accessibility
+
+Fast Loading
+
+Lighthouse Score 95+
+
+--------------------------------------------------------
+
+FINAL GOAL
+
+The final result should look like a ₹10 lakh premium restaurant website with cinematic visuals, luxury typography, immersive food photography, buttery smooth animations, elegant spacing, and an unforgettable user experience. The website should instantly make visitors hungry and encourage them to reserve a table or place an order.
