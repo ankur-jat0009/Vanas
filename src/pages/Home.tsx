@@ -56,6 +56,17 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   const handleReservation = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
@@ -66,7 +77,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background overflow-x-hidden">
       <AnimatePresence>
         {loading && (
           <motion.div
@@ -229,7 +240,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
-                <div className="absolute inset-0 bg-primary/10 translate-x-4 translate-y-4 -z-10" />
+                <div className="absolute inset-0 bg-primary/10 translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 -z-10" />
                 <img src={exteriorImage} alt="VANAS Exterior" className="w-full h-auto object-cover rounded-sm shadow-xl" />
               </motion.div>
               
