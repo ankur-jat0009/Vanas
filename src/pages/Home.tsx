@@ -110,10 +110,10 @@ export default function Home() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-            {["Home", "About", "Menu", "Gallery", "Reviews", "Contact"].map((item) => (
+            {["Home", "About", "Menu", "Order Online", "Gallery", "Reviews", "Contact"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(" ", "-")}`}
                 className="text-sm font-medium tracking-wide transition-colors hover:text-accent text-foreground"
               >
                 {item}
@@ -146,10 +146,10 @@ export default function Home() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 z-30 bg-background pt-24 px-6 flex flex-col gap-6"
           >
-            {["Home", "About", "Menu", "Gallery", "Reviews", "Contact"].map((item) => (
+            {["Home", "About", "Menu", "Order Online", "Gallery", "Reviews", "Contact"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(" ", "-")}`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-2xl font-serif text-foreground border-b border-border pb-4"
               >
@@ -367,6 +367,105 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Order Online Section */}
+        <section id="order-online" className="py-24 bg-muted/40">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h4 className="text-accent font-sans font-semibold tracking-widest uppercase mb-4 text-sm">Delivery Partners</h4>
+              <h2 className="text-4xl md:text-5xl font-serif text-secondary font-bold mb-4">Order Online</h2>
+              <p className="text-muted-foreground text-lg">Bring the authentic flavors of VANAS to your doorstep. Order fresh coastal delicacies via our delivery partners.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Zomato Card */}
+              <motion.div
+                whileHover={{ y: -8, scale: 1.01 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white border border-border/60 p-8 rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl transition-shadow relative overflow-hidden group"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#E23744]/5 rounded-bl-full -z-10 group-hover:bg-[#E23744]/10 transition-colors" />
+                <div>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 rounded-xl bg-[#E23744]/10 flex items-center justify-center shrink-0">
+                      {/* Zomato SVG Logo */}
+                      <svg viewBox="0 0 24 24" className="w-10 h-10 fill-[#E23744]" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.69 13.91l-1.69 1.69-1.69-1.69c-1.3-1.3-2.12-3.1-2.12-5.09v-1.12c0-1.1.9-2 2-2h3.62c1.1 0 2 .9 2 2v1.12c0 1.99-.82 3.79-2.12 5.09z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-serif font-bold text-secondary">Zomato</h3>
+                      <span className="text-xs bg-[#E23744]/10 text-[#E23744] px-2.5 py-0.5 rounded-full font-medium">Fast Delivery</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 mb-8 text-left">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#E23744] shrink-0" />
+                      <p className="text-foreground text-sm font-medium">Delivery fee ₹40–₹60 <span className="text-muted-foreground font-light">· Service fee may apply</span></p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#E23744] shrink-0" />
+                      <p className="text-foreground text-sm font-medium">Delivers in 30–40 min</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.zomato.com/mangalore/vanas-mallikatte/order"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center py-4 bg-[#E23744] hover:bg-[#cb2f3b] text-white font-serif text-lg tracking-wider transition-colors rounded-xl shadow-md shadow-[#E23744]/20 block"
+                >
+                  Order on Zomato
+                </a>
+              </motion.div>
+
+              {/* Swiggy Card */}
+              <motion.div
+                whileHover={{ y: -8, scale: 1.01 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white border border-border/60 p-8 rounded-2xl shadow-lg flex flex-col justify-between hover:shadow-xl transition-shadow relative overflow-hidden group"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#FC8019]/5 rounded-bl-full -z-10 group-hover:bg-[#FC8019]/10 transition-colors" />
+                <div>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 rounded-xl bg-[#FC8019]/10 flex items-center justify-center shrink-0">
+                      {/* Swiggy SVG Logo */}
+                      <svg viewBox="0 0 64 64" className="w-10 h-10 fill-[#FC8019]" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.7 15.3c-2.3-2.3-5.2-3.8-8.4-4.5-3.2-.7-6.5-.4-9.5.7-3 .9-5.7 2.7-7.8 5.1L12.5 26.1c-2.4 2.8-3.7 6.4-3.7 10.1 0 3.7 1.3 7.3 3.7 10.1 2.4 2.8 5.8 4.6 9.5 5.1s7.5-.4 10.6-2.5l14.2-14.2c1.2-1.2 1.2-3.1 0-4.2s-3.1-1.2-4.2 0L28.4 44.7c-1.3 1.3-3.1 2-4.9 1.8-1.8-.2-3.4-1.1-4.5-2.5-1.1-1.4-1.7-3.2-1.7-5.1 0-1.8.6-3.6 1.7-5L27.6 25c1.6-1.6 3.7-2.6 6-2.8s4.6.2 6.5 1.2c1.9 1 3.4 2.6 4.3 4.5.9 1.9 1.1 4.1.7 6.2-.4 2.1-1.4 4-3 5.4l-8.5 8.5c-.8.8-.8 2.1 0 2.9.4.4.9.6 1.4.6s1-.2 1.4-.6l8.5-8.5c2.9-2.9 4.7-6.7 5.1-10.8s-.3-8.2-2.1-11.8c-1.8-3.5-4.8-6.3-8.3-8.1z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-serif font-bold text-secondary">Swiggy</h3>
+                      <span className="text-xs bg-[#FC8019]/10 text-[#FC8019] px-2.5 py-0.5 rounded-full font-medium">Highly Rated</span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4 mb-8 text-left">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#FC8019] shrink-0" />
+                      <p className="text-foreground text-sm font-medium">Delivery fees up to ₹10 <span className="text-muted-foreground font-light">· Service fee may apply</span></p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#FC8019] shrink-0" />
+                      <p className="text-foreground text-sm font-medium">Delivers in 25–40 min</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://www.swiggy.com/city/mangaluru/vanas-road-kadri-rest365937?is_retargeting=true&media_source=GooglePlaceOrder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center py-4 bg-[#FC8019] hover:bg-[#e46e10] text-white font-serif text-lg tracking-wider transition-colors rounded-xl shadow-md shadow-[#FC8019]/20 block"
+                >
+                  Order on Swiggy
+                </a>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* Gallery */}
         <section id="gallery" className="py-24 bg-secondary text-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -534,9 +633,9 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-serif font-bold mb-6 text-accent">Quick Links</h3>
               <ul className="space-y-3 font-light text-white/80">
-                {["Home", "About", "Menu", "Gallery", "Reviews"].map(link => (
+                {["Home", "About", "Menu", "Order Online", "Gallery", "Reviews"].map(link => (
                   <li key={link}>
-                    <a href={`#${link.toLowerCase()}`} className="hover:text-accent transition-colors">{link}</a>
+                    <a href={`#${link.toLowerCase().replace(" ", "-")}`} className="hover:text-accent transition-colors">{link}</a>
                   </li>
                 ))}
               </ul>
