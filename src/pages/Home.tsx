@@ -129,11 +129,11 @@ export default function Home() {
 
           {/* Mobile Nav Toggle */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 rounded-full bg-secondary/10 text-secondary hover:bg-secondary/20 hover:text-primary transition-all duration-200 focus:outline-none"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X size={24} /> : <MenuIcon size={24} />}
+            {mobileMenuOpen ? <X size={24} strokeWidth={2.5} /> : <MenuIcon size={24} strokeWidth={2.5} />}
           </button>
         </div>
       </header>
@@ -235,8 +235,9 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
@@ -245,8 +246,9 @@ export default function Home() {
               </motion.div>
               
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
                 <h4 className="text-accent font-sans font-semibold tracking-widest uppercase mb-4 text-sm">Our Story</h4>
@@ -343,19 +345,19 @@ export default function Home() {
                 >
                   {menuCategories.find(c => c.id === activeMenuCategory)?.items.map((item, idx) => (
                     <div key={idx} className="flex flex-col border-b border-border/50 pb-4">
-                      <div className="flex justify-between items-start mb-1">
-                        <div className="flex items-center gap-2">
-                          <div className={`w-3 h-3 border ${item.veg ? 'border-green-600' : 'border-red-600'} flex items-center justify-center`}>
+                      <div className="flex justify-between items-start gap-4 mb-1">
+                        <div className="flex flex-wrap items-center gap-2 min-w-0">
+                          <div className={`w-3 h-3 border ${item.veg ? 'border-green-600' : 'border-red-600'} flex items-center justify-center shrink-0`}>
                             <div className={`w-1.5 h-1.5 rounded-full ${item.veg ? 'bg-green-600' : 'bg-red-600'}`} />
                           </div>
-                          <h4 className="font-serif text-xl font-bold text-foreground">{item.name}</h4>
+                          <h4 className="font-serif text-xl font-bold text-foreground break-words">{item.name}</h4>
                           {item.special && (
-                            <span className="bg-accent/10 text-accent text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-accent/20">
+                            <span className="bg-accent/10 text-accent text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full border border-accent/20 shrink-0">
                               Chef's Pick
                             </span>
                           )}
                         </div>
-                        <span className="font-mono text-lg font-medium text-secondary">{item.price}</span>
+                        <span className="font-mono text-lg font-medium text-secondary shrink-0">{item.price}</span>
                       </div>
                     </div>
                   ))}
