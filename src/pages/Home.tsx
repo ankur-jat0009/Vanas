@@ -298,15 +298,18 @@ export default function Home() {
                   <div className="aspect-[4/5] overflow-hidden">
                     <img src={dish.img} alt={dish.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
-                  {/* Soft cream veil overlaying the image to ensure high contrast for the dark brown text */}
-                  <div className="absolute inset-0 bg-background/65 group-hover:bg-background/50 transition-colors duration-300" />
-                  
-                  {/* Centered text content with no background box */}
+                  {/* Centered text content with no background box or overlays */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                    <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2 transform transition-transform duration-300 group-hover:scale-105">
+                    <h3 
+                      className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2 transform transition-transform duration-300 group-hover:scale-105"
+                      style={{ textShadow: "0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.95)" }}
+                    >
                       {dish.title}
                     </h3>
-                    <p className="text-xs md:text-sm text-foreground/80 font-medium max-w-[220px] leading-relaxed">
+                    <p 
+                      className="text-xs md:text-sm text-foreground font-semibold max-w-[220px] leading-relaxed"
+                      style={{ textShadow: "0 1px 2px rgba(255, 255, 255, 0.95), 0 0 8px rgba(255, 255, 255, 0.95)" }}
+                    >
                       {dish.desc}
                     </p>
                   </div>
