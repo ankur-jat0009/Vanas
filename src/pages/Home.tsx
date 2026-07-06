@@ -298,19 +298,17 @@ export default function Home() {
                   <div className="aspect-[4/5] overflow-hidden">
                     <img src={dish.img} alt={dish.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
-                  {/* Subtle dark tint to enhance central badge visibility */}
-                  <div className="absolute inset-0 bg-black/15 group-hover:bg-black/30 transition-colors duration-300" />
+                  {/* Soft cream veil overlaying the image to ensure high contrast for the dark brown text */}
+                  <div className="absolute inset-0 bg-background/65 group-hover:bg-background/50 transition-colors duration-300" />
                   
-                  {/* Centered cream badge with dark brown text */}
-                  <div className="absolute inset-0 flex items-center justify-center p-4">
-                    <div className="bg-background/95 backdrop-blur-md border border-border/40 p-6 text-center shadow-xl max-w-[90%] transform transition-all duration-300 group-hover:scale-105">
-                      <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground mb-2">
-                        {dish.title}
-                      </h3>
-                      <p className="text-xs md:text-sm text-muted-foreground font-light leading-relaxed">
-                        {dish.desc}
-                      </p>
-                    </div>
+                  {/* Centered text content with no background box */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                    <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2 transform transition-transform duration-300 group-hover:scale-105">
+                      {dish.title}
+                    </h3>
+                    <p className="text-xs md:text-sm text-foreground/80 font-medium max-w-[220px] leading-relaxed">
+                      {dish.desc}
+                    </p>
                   </div>
                 </motion.div>
               ))}
