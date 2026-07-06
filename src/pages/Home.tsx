@@ -298,10 +298,10 @@ export default function Home() {
                   <div className="aspect-[4/5] overflow-hidden">
                     <img src={dish.img} alt={dish.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-300">
-                    <h3 className="text-2xl font-serif font-bold mb-2">{dish.title}</h3>
-                    <p className="text-sm text-white/80 font-light">{dish.desc}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/65 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-foreground">
+                    <h3 className="text-2xl font-serif font-bold mb-2 text-foreground">{dish.title}</h3>
+                    <p className="text-sm text-foreground/90 font-medium">{dish.desc}</p>
                   </div>
                 </motion.div>
               ))}
